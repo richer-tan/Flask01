@@ -12,7 +12,7 @@ def products():
 
 @app.route('/products/<string:id>')
 def product_detail(id):
-    return '<h1>Product #{{ id }} Details</h1>'
+    return f'<h1>Product #{id} Details</h1>'
 
 if __name__ == '__main__': 
     app.run(host='0.0.0.0', port=80)
