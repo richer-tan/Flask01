@@ -10,6 +10,10 @@ def hello_world():
 def products():
     return '<h1>Product Page</h1>'
 
+@app.route('/products/<string:id>')
+def product_select(id):
+    return f'Id of this page is {id}'
+
 if __name__ == '__main__': 
     app.run(host='0.0.0.0', port=80)
 
